@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'https://bitbucket.org/jpmobapp/im-mobile-app.git', changelog: true, branch: 'uat')
+        git(url: 'https://bitbucket.org/jpmobapp/im-mobile-app.git', changelog: true, branch: 'uat', credentialsId: 'rahul_credentials')
       }
     }
 
